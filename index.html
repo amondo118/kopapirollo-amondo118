@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kő-Papír-Olló Játék</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Kő-Papír-Olló</h1>
+
+  <div class="game-container">
+    <div class="hand-container">
+      <h2>Gép</h2>
+      <div id="computerChoice" class="hand standby"></div>
+    </div>
+
+    <div class="hand-container">
+      <h2>Te</h2>
+      <div id="myChoice" class="hand standby"></div>
+    </div>
+  </div>
+
+  <div class="choices">
+    <h2>Válassz!</h2>
+    <div class="choice-buttons">
+      <img src="rock.jpeg" alt="Kő" id="rock" class="choice-img">
+      <img src="paper.jpeg" alt="Papír" id="paper" class="choice-img">
+      <img src="scissors.jpeg" alt="Olló" id="scissors" class="choice-img">
+    </div>
+  </div>
+
+  <div class="scoreboard" id="scoreboard">Te: 0 - Gép: 0</div>
+  <div id="result" class="message"></div>
+  <div id="message" class="message"></div>
+
+  <button id="restartButton" onclick="restartGame()">Új meccs</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
