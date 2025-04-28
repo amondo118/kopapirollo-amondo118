@@ -43,9 +43,11 @@ function playerChoiceFunction(choice) {
   setStandbyAnimation(false);
 
   setTimeout(() => {
+    myChoiceDisplay.classList.add('upDown');
+    computerChoiceDisplay.classList.add('upDown');
     displayChoices();
     determineWinner();
-  }, 1000);
+  }, 1500);
 }
 
 function displayChoices() {
@@ -53,13 +55,10 @@ function displayChoices() {
   computerChoiceDisplay.innerHTML = `<img src="${computerChoice}.jpeg" alt="${computerChoice}">`;
   myChoiceDisplay.innerHTML = `<img src="${playerChoice}.jpeg" alt="${playerChoice}">`;
 
-  myChoiceDisplay.classList.add('upDown');
-  computerChoiceDisplay.classList.add('upDown');
+  myChoiceDisplay.classList.remove('upDown');
+  computerChoiceDisplay.classList.remove('upDown');
 
-  setTimeout(() => {
-    myChoiceDisplay.classList.remove('upDown');
-    computerChoiceDisplay.classList.remove('upDown');
-  }, 3000);
+ 
 }
 
 function determineWinner() {
