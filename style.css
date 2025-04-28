@@ -83,7 +83,7 @@ body {
   }
   
   .upDown img {
-    animation: upDown 0.6s 6;
+    animation: upDown 0.6s 3;
   }
   
   .message {
