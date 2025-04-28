@@ -32,8 +32,7 @@ function setStandbyAnimation(active) {
     computerChoiceDisplay.classList.remove('standby');
     myChoiceDisplay.classList.remove('standby');
 
-    myChoiceDisplay.classList.add('upDown');
-    computerChoiceDisplay.classList.add('upDown');
+    
   }
 }
 
@@ -44,7 +43,8 @@ function playerChoiceFunction(choice) {
   computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
   setStandbyAnimation(false);
-  
+  myChoiceDisplay.classList.add('upDown');
+    computerChoiceDisplay.classList.add('upDown');
   setTimeout(() => {
     displayChoices();
     determineWinner();
