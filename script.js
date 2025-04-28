@@ -48,7 +48,7 @@ function playerChoiceFunction(choice) {
   setTimeout(() => {
     displayChoices();
     determineWinner();
-  }, 1500);
+  }, 1800);
 }
 
 function displayChoices() {
